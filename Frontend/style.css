@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.navbar h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Main Container */
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Welcome Section */
+.welcome-section {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #eee;
+}
+
+.welcome-section h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.welcome-section p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.features {
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Control Buttons */
+.controls {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-stop {
+    background-color: #dc3545;
+}
+
+.btn-stop:hover {
+    background-color: #c82333;
+}
+
+.btn-clear {
+    background-color: #6c757d;
+}
+
+.btn-clear:hover {
+    background-color: #545b62;
+}
+
+/* Q&A Section */
+.qa-section {
+    margin-top: 2rem;
+}
+
+.qa-section h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.question-section,
+.answer-section {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.question-section {
+    background-color: #e3f2fd;
+    border-left: 4px solid #2196f3;
+}
+
+.answer-section {
+    background-color: #f3e5f5;
+    border-left: 4px solid #9c27b0;
+}
+
+#answerText pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+#questionText pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.section-title {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.section-content {
+    color: #555;
+    font-size: 1rem;
+}
+
+.empty {
+    color: #999;
+    font-style: italic;
+}
+
+/* Status */
+.status {
+    text-align: center;
+    margin: 1rem 0;
+    font-weight: bold;
+    color: #666;
+}
+
+.status.listening {
+    color: #28a745;
+}
+
+.status.processing {
+    color: #ffc107;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 5px;
+    }
+
+    .navbar h1 {
+        font-size: 1.5rem;
+    }
+
+    .welcome-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .welcome-section p {
+        font-size: 1rem;
+    }
+
+    .features {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        margin: 5px;
+        font-size: 0.9rem;
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        margin: 5px auto;
+    }
+
+    .controls {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .question-section,
+    .answer-section {
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    #answerText pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+    #questionText pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+    .section-title {
+        font-size: 0.9rem;
+    }
+
+    .section-content {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .navbar {
+        padding: 0.8rem;
+    }
+
+    .navbar h1 {
+        font-size: 1.3rem;
+    }
+
+    .container {
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+
+    .welcome-section {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .welcome-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 12px 16px;
+        font-size: 0.9rem;
+    }
+
+    .qa-section h3 {
+        font-size: 1.1rem;
+    }
+
+    #answerText pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+    #questionText pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+}

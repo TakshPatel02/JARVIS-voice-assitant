@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JARVIS Voice Assistant</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h1>JARVIS</h1>
+    </nav>
+
+    <div class="container">
+        <!-- Welcome Section -->
+        <div class="welcome-section">
+            <h2>Welcome to JARVIS Voice Assistant</h2>
+            <p>Hello! I'm JARVIS, your personal voice assistant.</p>
+            <div class="features">
+                <strong>What can I do for you?</strong><br>
+                • Answer your questions<br>
+                • Help with general queries<br>
+                • Provide information on various topics<br>
+                • Assist with daily tasks and reminders
+            </div>
+        </div>
+
+        <!-- Control Buttons -->
+        <div class="controls">
+            <button class="btn" id="startBtn">Start Listening</button>
+            <button class="btn btn-stop" id="stopBtn" disabled>Stop Listening</button>
+        </div>
+
+        <!-- Status -->
+        <div class="status" id="status">Ready to listen</div>
+
+        <!-- Q&A Section -->
+        <div class="qa-section">
+            <h3>Conversation History</h3>
+
+            <div class="question-section">
+                <div class="section-title">Your Question:</div>
+                <div class="section-content empty" id="questionText">No question asked yet...</div>
+            </div>
+
+            <div class="answer-section">
+                <div class="section-title">JARVIS Answer:</div>
+                <div class="section-content empty" id="answerText">Waiting for your question...</div>
+            </div>
+
+            <!-- Clear Button -->
+            <div style="text-align: center; margin-top: 1.5rem;">
+                <button class="btn btn-clear" id="clearBtn">Clear Conversation</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
